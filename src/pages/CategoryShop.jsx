@@ -39,7 +39,7 @@ const CategoryShops = () => {
 
     const minPrice = Math.min(priceRange.low, priceRange.high);
     let maxPrice = Math.max(priceRange.low, priceRange.high);
-     if (minPrice === maxPrice) {
+    if (minPrice === maxPrice) {
         maxPrice += 1; // Ajusta maxPrice para evitar el error
     }
 
@@ -110,7 +110,7 @@ const CategoryShops = () => {
                                     )}
                                 />
                                 <div>
-                                    <span className='text-red-500 font-bold text-lg'>${Math.floor(state.values[0])} - ${Math.floor(state.values[1])}</span>
+                                    <span className='text-red-500 font-bold text-lg'>Bs{Math.floor(state.values[0])} - ${Math.floor(state.values[1])}</span>
                                 </div>
                             </div>
                             <div className='py-3 flex flex-col gap-4'>
@@ -170,7 +170,7 @@ const CategoryShops = () => {
                                     <h2 className='text-lg font-medium text-slate-600'>{totalProduct} Productos</h2>
                                     <div className='flex justify-center items-center gap-3'>
                                         <select onChange={(e) => setSortPrice(e.target.value)} className='p-1 border outline-0 text-slate-600 font-semibold' name="" id="">
-                                            <option value="">Sort By</option>
+                                            <option value="">Ordenar por</option>
                                             <option value="low-to-high">Precio bajo a alto</option>
                                             <option value="high-to-low">Precio alto a bajo</option>
                                         </select>

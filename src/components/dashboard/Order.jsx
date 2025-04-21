@@ -27,7 +27,7 @@ const Order = () => {
                     <p className='text-slate-600 text-sm font-semibold'>Correo a {userInfo.email}</p>
                 </div>
                 <div className='text-slate-600'>
-                    <h2>Precio: ${myOrder.price} incluye envío</h2>
+                    <h2>Precio: Bs{myOrder.price} incluye envío</h2>
                     <p>Estado de pago: <span className={`py-[1px] text-xs px-3 ${myOrder.payment_status === 'paid' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'} rounded-md `}>{myOrder.payment_status}</span></p>
                     <p>Estado del envío: <span className={`py-[1px] text-xs px-3 ${myOrder.delivery_status === 'paid' ? 'bg-indigo-100 text-indigo-800' : 'bg-red-100 text-red-800'} rounded-md `}>{myOrder.delivery_status}</span></p>
                 </div>

@@ -121,7 +121,7 @@ const Shops = () => {
                                     )}
                                 />
                                 <div>
-                                    <span className='text-red-500 font-bold text-lg'>Bs{Math.floor(state.values[0])} - ${Math.floor(state.values[1])}</span>
+                                    <span className='text-red-500 font-bold text-lg'>Bs {Math.floor(state.values[0])} - Bs {Math.floor(state.values[1])}</span>
                                 </div>
                             </div>
                             <div className='py-3 flex flex-col gap-4'>
